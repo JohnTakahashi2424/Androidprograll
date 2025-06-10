@@ -1,23 +1,19 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
+        gradlePluginPortal()    // Plugins del Version Catalog y Gradle
+        google()                // Plugin Android y Google Services
+        mavenCentral()          // Otros plugins
     }
 }
 
-rootProject.name = "holaMundo"
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()       // Play Services, Firebase, Maps
+        mavenCentral() // Retrofit, Maps Utils, Places API, etc.
+    }
+}
+
+rootProject.name = "MiPrimeraAplicacion"
 include(":app")
+ 

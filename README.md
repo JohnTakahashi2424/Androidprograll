@@ -1,2 +1,2 @@
-# PrograII-Virtual-2025
-Códigos, practicas y ejemplos de las clases virtuales de Programación II
+# prograII-semi-2025
+Códigos de la clase de programación computacional II
